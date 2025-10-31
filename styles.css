@@ -1,2 +1,19 @@
+/* Flexbox container */
+.holder {
+  display: flex;                 /* Enable flexbox */
+  flex-direction: row;           /* Arrange items in a row */
+  justify-content: space-between;/* Space between items; edges touch screen */
+  flex-wrap: wrap;               /* Allow wrapping if more items are added */
+  padding: 10px;
+}
 
-/* Your CSS Code here. */
+/* Flexbox items */
+.item {
+  background-color: lightblue;
+  border: 2px solid blue;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  flex: 0 0 auto; /* Prevent items from squashing */
+}
